@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AdMonitor - Dasbor Iklan Ditolak</title>
+    
+    <!-- Tailwind CSS for styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Flatpickr for Calendar -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="https://npmcdn.com/flatpickr/dist/l10n/id.js"></script>
+
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .transition-all { transition: all 0.2s ease-in-out; }
+        ::-webkit-scrollbar { width: 8px; height: 8px; }
+        ::-webkit-scrollbar-track { background: #f1f5f9; }
+        ::-webkit-scrollbar-thumb { background: #94a3b8; border-radius: 10px; }
+        ::-webkit-scrollbar-thumb:hover { background: #64748b; }
+        
+        /* Custom styles for Flatpickr calendar to match the theme */
+        .flatpickr-calendar {
+            font-family: 'Inter', sans-serif;
+            background: #ffffff;
+            border: 1px solid #e2e8f0;
+            border-radius: 0.75rem;
+            box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+        }
+        .flatpickr-day.selected, .flatpickr-day.startRange, .flatpickr-day.endRange {
+            background: #2563eb;
+            border-color: #2563eb;
+        }
+        .flatpickr-day.inRange {
+            background: #dbeafe;
+            border-color: #dbeafe;
+            box-shadow: -5px 0 0 #dbeafe, 5px 0 0 #dbeafe;
+        }
+        .flatpickr-months .flatpickr-month {
+            color: #1e293b;
+            fill: #1e293b;
+        }
+        .flatpickr-weekdays {
+            color: #475569;
+        }
+        span.flatpickr-weekday {
+            color: #475569;
+        }
+        .flatpickr-day:hover {
+            background: #eff6ff;
+        }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://esm.sh/react-dom@^19.1.1/",
+    "@google/genai": "https://esm.sh/@google/genai@^1.11.0",
+    "react/": "https://esm.sh/react@^19.1.1/",
+    "react": "https://esm.sh/react@^19.1.1",
+    "flatpickr/": "https://esm.sh/flatpickr@^4.6.13/",
+    "flatpickr": "https://esm.sh/flatpickr@^4.6.13"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body class="bg-slate-100 text-slate-800">
+    <div id="root"></div>
+<script type="module" src="/index.tsx"></script>
+</body>
+</html>

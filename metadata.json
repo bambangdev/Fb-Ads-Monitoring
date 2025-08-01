@@ -1,0 +1,6 @@
+{
+  "name": "Facebook Ads Rejection Monitor",
+  "description": "An application to monitor rejected Facebook Ads accounts, providing a clear overview and AI-powered analysis to understand and fix ad rejections.",
+  "requestFramePermissions": [],
+  "prompt": ""
+}
